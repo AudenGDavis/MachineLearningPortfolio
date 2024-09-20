@@ -87,13 +87,9 @@ class Game:
 
 
 def main():
-    mat1 = np.array([[1,2]])
     
-    mat2 = np.array([[1,2],
-                     [0,0]])
-    
-    mat3 = np.array([[1,1]])
-    print(np.matmul(mat1,mat2) + mat3)
+
+    print(a)
 
 if __name__ == "__main__":
     main()
