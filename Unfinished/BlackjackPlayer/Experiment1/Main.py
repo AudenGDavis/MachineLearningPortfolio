@@ -190,8 +190,7 @@ class Simulation:
         
         
         
-                
-        
+  
 
 def Main():
     highestS = None
@@ -199,7 +198,7 @@ def Main():
     highestWinRate = 0
     
     numDecks = 1
-    iterations = 1000
+    iterations = 50000
     for s in [True,False]:
         for t in [10,11,12,13,14,15,16,17,18,19,20]:
             winSum = 0.0

@@ -1,27 +1,12 @@
-import TicTacToe
-
-def whosTurn(player):
-    if player == 1:
-        return 1
-    else:
-        return 2
+import time
+import sys
+import AudensNeuralNetworkLibrary
+import random
 
 
-game = TicTacToe.TicTacToeGame()
-
-turn = 1
-
-isDone = False
-while not isDone:
-    game.printSymbolBoard()
-    print()
-    move = input("Player " + str(whosTurn(turn)) + ", what is your move? ")
-    game.placeMark(turn,int(move))
     
-    winner = game.whoWon()
-    if winner != 0:
-        print(("Player " + str(whosTurn(turn)) + " won"))
-        isDone = True
-    else:
-        print()
-    turn *= -1
+def main():
+    print(random.randrange(0,2))
+if __name__ == "__main__":
+    main()
+    
