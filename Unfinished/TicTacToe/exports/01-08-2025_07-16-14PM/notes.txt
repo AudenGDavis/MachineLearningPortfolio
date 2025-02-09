@@ -1,1 +1,0 @@
-This program followed the old format. Each generation had 100 players. After 50 1v1's, the winner continie and repoduced into the second generation and the bottom 50 were left out.

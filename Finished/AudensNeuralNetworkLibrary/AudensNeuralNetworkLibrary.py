@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np # type: ignore
 import json
 import time
 from datetime import datetime
@@ -85,12 +85,17 @@ class NeuralNetwork:
             
         for i in range(numMutations):
             #mutate bias or weight:
-            if 1 == 1: # 1 = mutate weight random.randrange(0,2)
+            if 1 == random.randrange(0,2): # 1 = mutate weight random.randrange(0,2)
                 weightsLayer: int = random.randrange(0,len(self.networkWeights))
                 
                 height, width = self.networkWeights[weightsLayer].shape
                 
                 returnNetwork.networkWeights[weightsLayer][random.randrange(height),random.randrange(width)] += mutationAmount
+            else:
+                weightsLayer: int = random.randrange(0,len(self.networkBiases))
+                
+                returnNetwork.networkBiases[weightsLayer][random.randrange(len(returnNetwork.networkBiases[weightsLayer]))] += mutationAmount
+                
         return returnNetwork
                 
 
